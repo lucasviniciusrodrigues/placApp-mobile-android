@@ -1,0 +1,2 @@
+com/ghostapps/placapp/BuildConfig.java
+ com.ghostapps.placapp.BuildConfig

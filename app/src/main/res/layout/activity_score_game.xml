@@ -49,6 +49,18 @@
         app:layout_constraintEnd_toEndOf="@id/gameScoreHomeTeamScore"
         app:layout_constraintTop_toBottomOf="@id/gameScoreHomeTeamScore"
         />
+
+    <TextView
+        android:id="@+id/gameScoreHomeSetScore"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="00"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="@id/gameScoreHomeTeamScore"
+        app:layout_constraintEnd_toEndOf="@id/gameScoreHomeTeamScore"
+        app:layout_constraintTop_toBottomOf="@id/gameScoreHomeDecrease"
+        app:layout_constraintBottom_toTopOf="@id/gameScoreExitButton"
+        />
     
     <!-- Away team -->
     <TextView
@@ -93,6 +105,18 @@
         app:layout_constraintStart_toStartOf="@id/gameScoreAwayTeamScore"
         app:layout_constraintEnd_toEndOf="@id/gameScoreAwayTeamScore"
         app:layout_constraintTop_toBottomOf="@id/gameScoreAwayTeamScore"
+        />
+
+    <TextView
+        android:id="@+id/gameScoreAwaySetScore"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="00"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="@id/gameScoreAwayTeamScore"
+        app:layout_constraintEnd_toEndOf="@id/gameScoreAwayTeamScore"
+        app:layout_constraintTop_toBottomOf="@id/gameScoreAwayDecrease"
+        app:layout_constraintBottom_toTopOf="@id/gameScoreExitButton"
         />
 
 

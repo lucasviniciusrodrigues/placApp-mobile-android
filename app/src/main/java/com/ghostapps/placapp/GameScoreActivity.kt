@@ -12,7 +12,10 @@ class GameScoreActivity: AppCompatActivity() {
     }
     
     var homeTeamScore = 0
+    var homeTeamSetScore = 0
+
     var awayTeamScore = 0
+    var awayTeamSetScore = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +26,8 @@ class GameScoreActivity: AppCompatActivity() {
 
         gameScoreHomeIncrease.setOnClickListener { 
             homeTeamScore++
+            if(checksetChange(homeTeamScore, awayTeamScore))
+                homeTeamSetScore++
             updateScore()
         }
         
@@ -33,6 +38,8 @@ class GameScoreActivity: AppCompatActivity() {
         
         gameScoreAwayIncrease.setOnClickListener {  
             awayTeamScore++
+            if(checksetChange(awayTeamScore, homeTeamScore))
+                awayTeamSetScore++
             updateScore()
         }
         
@@ -45,10 +52,22 @@ class GameScoreActivity: AppCompatActivity() {
             finish()
         }
     }
-    
+
+    private fun checksetChange(newScore: Int, oldScore: Int): Boolean {
+        if(newScore >= 25 && newScore - oldScore > 1){
+            homeTeamScore = 0;
+            awayTeamScore = 0;
+            return true;
+        }
+
+        return false;
+    }
+
     private fun updateScore() {
         gameScoreHomeTeamScore.text = String.format("%02d", homeTeamScore)
         gameScoreAwayTeamScore.text = String.format("%02d", awayTeamScore)
+        gameScoreHomeSetScore.text = String.format("%02d", homeTeamSetScore)
+        gameScoreAwaySetScore.text = String.format("%02d", awayTeamSetScore)
     }
 
 }
