@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_pre_game.xml",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\layout\\activity_pre_game.xml"
+    },
+    {
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_score_game.xml",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\layout\\activity_score_game.xml"
+    }
+]

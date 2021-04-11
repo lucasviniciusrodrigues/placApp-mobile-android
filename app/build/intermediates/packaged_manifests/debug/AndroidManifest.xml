@@ -9,6 +9,7 @@
         android:targetSdkVersion="30" />
 
     <application
+        android:name="com.ghostapps.placapp.main.PlacApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -19,15 +20,20 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.ghostapps.placapp.HomeActivity" >
+        <activity android:name="com.ghostapps.placapp.ui.home.HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ghostapps.placapp.PreGameActivity" />
-        <activity android:name="com.ghostapps.placapp.GameScoreActivity" />
+        <activity android:name="com.ghostapps.placapp.ui.preGame.PreGameActivity" />
+        <activity android:name="com.ghostapps.placapp.ui.gameScore.GameScoreActivity" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
     </application>
 
 </manifest>
