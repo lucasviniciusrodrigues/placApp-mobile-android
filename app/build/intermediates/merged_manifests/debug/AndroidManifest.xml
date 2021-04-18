@@ -29,6 +29,7 @@
         </activity>
         <activity android:name="com.ghostapps.placapp.ui.preGame.PreGameActivity" />
         <activity android:name="com.ghostapps.placapp.ui.gameScore.GameScoreActivity" />
+        <activity android:name="com.ghostapps.placapp.ui.gameRecords.GameRecordsActivity" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

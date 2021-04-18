@@ -11,7 +11,7 @@
 9-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:5:5-21:19
+11-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:5:5-22:19
 12        android:name="com.ghostapps.placapp.main.PlacApp"
 12-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:6:9-37
 13        android:allowBackup="true"
@@ -51,15 +51,18 @@
 31        <activity android:name="com.ghostapps.placapp.ui.gameScore.GameScoreActivity" />
 31-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:20:9-68
 31-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:20:19-65
-32
-33        <service
-33-->[androidx.room:room-runtime:2.2.6] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\7edde419dd7c632d1119f9ab0e071301\room-runtime-2.2.6\AndroidManifest.xml:25:9-28:40
-34            android:name="androidx.room.MultiInstanceInvalidationService"
-34-->[androidx.room:room-runtime:2.2.6] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\7edde419dd7c632d1119f9ab0e071301\room-runtime-2.2.6\AndroidManifest.xml:26:13-74
-35            android:directBootAware="true"
-35-->[androidx.room:room-runtime:2.2.6] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\7edde419dd7c632d1119f9ab0e071301\room-runtime-2.2.6\AndroidManifest.xml:27:13-43
-36            android:exported="false" />
-36-->[androidx.room:room-runtime:2.2.6] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\7edde419dd7c632d1119f9ab0e071301\room-runtime-2.2.6\AndroidManifest.xml:28:13-37
-37    </application>
-38
-39</manifest>
+32        <activity android:name="com.ghostapps.placapp.ui.gameRecords.GameRecordsActivity" />
+32-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:21:9-72
+32-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:21:19-69
+33
+34        <service
+34-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:25:9-28:40
+35            android:name="androidx.room.MultiInstanceInvalidationService"
+35-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:26:13-74
+36            android:directBootAware="true"
+36-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:27:13-43
+37            android:exported="false" />
+37-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:28:13-37
+38    </application>
+39
+40</manifest>

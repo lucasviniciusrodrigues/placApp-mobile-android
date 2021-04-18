@@ -1858,6 +1858,8 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id gameRecordsList
+id gameRecordsToolbar
 id gameScoreAwayDecrease
 id gameScoreAwayIncrease
 id gameScoreAwaySetScore
@@ -1869,6 +1871,7 @@ id gameScoreHomeIncrease
 id gameScoreHomeSetScore
 id gameScoreHomeTeamName
 id gameScoreHomeTeamScore
+id gameScoresRecords
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1885,6 +1888,7 @@ id homeAsUp
 id homeExitButton
 id homeMessage
 id homeNewGameButton
+id homeRecordsButton
 id homeTitle
 id honorRequest
 id icon
@@ -1897,6 +1901,15 @@ id info
 id invisible
 id inward
 id italic
+id itemGameRecordAwayTeamName
+id itemGameRecordAwayTeamScore
+id itemGameRecordDelete
+id itemGameRecordDivisor
+id itemGameRecordHomeTeamName
+id itemGameRecordHomeTeamScore
+id itemGameScoreRecordAwayTeamScore
+id itemGameScoreRecordDivisor
+id itemGameScoreRecordHomeTeamScore
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -2189,6 +2202,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_game_records
 layout activity_home
 layout activity_pre_game
 layout activity_score_game
@@ -2208,6 +2222,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_game_record
+layout item_game_score_record
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2321,6 +2337,7 @@ string hide_bottom_view_on_scroll_behavior
 string homeExit
 string homeMessage
 string homeNewGame
+string homeRecords
 string icon_content_description
 string item_view_role_description
 string material_clock_display_divider

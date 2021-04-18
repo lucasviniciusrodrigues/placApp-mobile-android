@@ -1,24 +1,31 @@
 package com.ghostapps.placapp.viewModel.gameScore
 
+import com.ghostapps.placapp.domain.models.RecordModel
+import com.ghostapps.placapp.domain.models.Score
+import com.ghostapps.placapp.domain.useCases.InsertRegister
 import com.ghostapps.placapp.viewModel.BaseViewModel
+import java.util.*
 
 class GameScoreViewModel(
-    val contract: GameScoreContract
+    private val contract: GameScoreContract,
+    private val insertRegister: InsertRegister
 ): BaseViewModel() {
 
     var homeTeamName = ""
     var awayTeamName = ""
 
-    var homeTeamScore = 0
-    var homeTeamSetScore = 0
-
-    var awayTeamScore = 0
-    var awayTeamSetScore = 0
-
     var formattedHomeTeamScore = "00"
     var formattedAwayTeamScore = "00"
     var formattedHomeTeamSetScore = "00"
     var formattedAwayTeamSetScore = "00"
+
+    private var homeTeamSetScore = 0
+    private var homeTeamScore = 0
+
+    private var awayTeamSetScore = 0
+    private var awayTeamScore = 0
+
+    private var scores = mutableListOf<Score>()
 
     fun onCreate(homeTeamName: String, awayTeamName: String) {
         this.homeTeamName = homeTeamName
@@ -29,6 +36,9 @@ class GameScoreViewModel(
         homeTeamScore++
         if(checksetChange(homeTeamScore, awayTeamScore)){
             homeTeamSetScore++
+            saveSet()
+            homeTeamScore = 0;
+            awayTeamScore = 0;
             checkHomeWin()
         }
         updateScore()
@@ -43,9 +53,22 @@ class GameScoreViewModel(
         awayTeamScore++
         if(checksetChange(awayTeamScore, homeTeamScore)){
             awayTeamSetScore++
+            saveSet()
+            homeTeamScore = 0;
+            awayTeamScore = 0;
             checkAwayWin()
         }
         updateScore()
+    }
+
+    private fun saveSet() {
+        scores.add (
+            Score (
+                awayTeamScore = awayTeamScore,
+                homeTeamScore = homeTeamScore,
+                setIdentifier = awayTeamSetScore + homeTeamSetScore
+            )
+        )
     }
 
     fun onAwayTeamDecrease() {
@@ -66,17 +89,11 @@ class GameScoreViewModel(
     private fun checksetChange(newScore: Int, oldScore: Int): Boolean {
 
         if(homeTeamSetScore == 2 && awayTeamSetScore == 2
-            && newScore >= 15 && newScore - oldScore > 1){
-            homeTeamScore = 0;
-            awayTeamScore = 0;
+            && newScore >= 15 && newScore - oldScore > 1)
             return true;
-        }
 
-        if(newScore >= 25 && newScore - oldScore > 1){
-            homeTeamScore = 0;
-            awayTeamScore = 0;
+        if(newScore >= 25 && newScore - oldScore > 1)
             return true;
-        }
 
         return false;
     }
@@ -101,6 +118,18 @@ class GameScoreViewModel(
     }
 
     fun onExitPressed() {
+        Thread {
+            insertRegister.execute(
+                    RecordModel(
+                    homeTeamName = homeTeamName,
+                    homeTeamSetScore = homeTeamSetScore,
+                    awayTeamName = awayTeamName,
+                    awayTeamSetScore = awayTeamSetScore,
+                    scores = scores,
+                    date = Date().time
+                )
+            )
+        }.start()
         contract.onExitPressed()
     }
 }

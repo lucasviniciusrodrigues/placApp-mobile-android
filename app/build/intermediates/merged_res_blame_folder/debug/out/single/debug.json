@@ -12,6 +12,14 @@
         "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_game_records.xml.flat",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\layout\\activity_game_records.xml"
+    },
+    {
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_game_record.xml.flat",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\layout\\item_game_record.xml"
+    },
+    {
         "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -30,6 +38,10 @@
     {
         "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_game_score_record.xml.flat",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\layout\\item_game_score_record.xml"
     },
     {
         "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

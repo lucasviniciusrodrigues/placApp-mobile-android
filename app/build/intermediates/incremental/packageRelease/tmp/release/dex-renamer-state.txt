@@ -1,0 +1,4 @@
+#Sun Apr 18 19:43:44 BRT 2021
+base.0=D\:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
