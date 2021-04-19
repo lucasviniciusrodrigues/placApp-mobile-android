@@ -20,9 +20,11 @@ class GameScoreViewModel(
     var formattedAwayTeamSetScore = "00"
 
     private var homeTeamSetScore = 0
+    private var endMatchHomeTeamSetScore = 0
     private var homeTeamScore = 0
 
     private var awayTeamSetScore = 0
+    private var endMatchAwayTeamSetScore = 0
     private var awayTeamScore = 0
 
     private var scores = mutableListOf<ScoreModel>()
@@ -62,6 +64,8 @@ class GameScoreViewModel(
     }
 
     private fun saveSet() {
+        endMatchHomeTeamSetScore = homeTeamSetScore
+        endMatchAwayTeamSetScore = awayTeamSetScore
         scores.add (
             ScoreModel (
                 awayTeamScore = awayTeamScore,
@@ -122,9 +126,9 @@ class GameScoreViewModel(
             insertRegister.execute(
                     RecordModel(
                     homeTeamName = homeTeamName,
-                    homeTeamSetScore = homeTeamSetScore,
+                    homeTeamSetScore = endMatchHomeTeamSetScore,
                     awayTeamName = awayTeamName,
-                    awayTeamSetScore = awayTeamSetScore,
+                    awayTeamSetScore = endMatchAwayTeamSetScore,
                     scoreModels = scores,
                     date = Date().time
                 )
