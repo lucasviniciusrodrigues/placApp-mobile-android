@@ -28,41 +28,40 @@
 19-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:10:9-54
 20        android:supportsRtl="true"
 20-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:11:9-35
-21        android:testOnly="true"
-22        android:theme="@style/AppTheme" >
-22-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:12:9-40
-23        <activity android:name="com.ghostapps.placapp.ui.home.HomeActivity" >
-23-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:13:9-18:20
-23-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:13:19-55
-24            <intent-filter>
-24-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:14:13-17:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:15:17-69
-25-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:15:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:16:17-77
-27-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:16:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity android:name="com.ghostapps.placapp.ui.preGame.PreGameActivity" />
-30-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:19:9-64
-30-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:19:19-61
-31        <activity android:name="com.ghostapps.placapp.ui.gameScore.GameScoreActivity" />
-31-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:20:9-68
-31-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:20:19-65
-32        <activity android:name="com.ghostapps.placapp.ui.gameRecords.GameRecordsActivity" />
-32-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:21:9-72
-32-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:21:19-69
-33
-34        <service
-34-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:25:9-28:40
-35            android:name="androidx.room.MultiInstanceInvalidationService"
-35-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:26:13-74
-36            android:directBootAware="true"
-36-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:27:13-43
-37            android:exported="false" />
-37-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:28:13-37
-38    </application>
-39
-40</manifest>
+21        android:theme="@style/AppTheme" >
+21-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:12:9-40
+22        <activity android:name="com.ghostapps.placapp.ui.home.HomeActivity" >
+22-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:13:9-18:20
+22-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:13:19-55
+23            <intent-filter>
+23-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:14:13-17:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:15:17-69
+24-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:15:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:16:17-77
+26-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:16:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.ghostapps.placapp.ui.preGame.PreGameActivity" />
+29-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:19:9-64
+29-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:19:19-61
+30        <activity android:name="com.ghostapps.placapp.ui.gameScore.GameScoreActivity" />
+30-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:20:9-68
+30-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:20:19-65
+31        <activity android:name="com.ghostapps.placapp.ui.gameRecords.GameRecordsActivity" />
+31-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:21:9-72
+31-->D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\AndroidManifest.xml:21:19-69
+32
+33        <service
+33-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:25:9-28:40
+34            android:name="androidx.room.MultiInstanceInvalidationService"
+34-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:26:13-74
+35            android:directBootAware="true"
+35-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:27:13-43
+36            android:exported="false" />
+36-->[androidx.room:room-runtime:2.3.0-alpha02] C:\Users\duxvi\.gradle\caches\transforms-2\files-2.1\a300bd643f40d35f1584cc3b2354a5ae\room-runtime-2.3.0-alpha02\AndroidManifest.xml:28:13-37
+37    </application>
+38
+39</manifest>
