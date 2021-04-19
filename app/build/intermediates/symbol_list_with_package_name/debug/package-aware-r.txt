@@ -1871,7 +1871,6 @@ id gameScoreHomeIncrease
 id gameScoreHomeSetScore
 id gameScoreHomeTeamName
 id gameScoreHomeTeamScore
-id gameScoresRecords
 id ghost_view
 id ghost_view_holder
 id gone

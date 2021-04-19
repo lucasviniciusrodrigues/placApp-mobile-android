@@ -1,7 +1,7 @@
 package com.ghostapps.placapp.viewModel.gameScore
 
 import com.ghostapps.placapp.domain.models.RecordModel
-import com.ghostapps.placapp.domain.models.Score
+import com.ghostapps.placapp.domain.models.ScoreModel
 import com.ghostapps.placapp.domain.useCases.InsertRegister
 import com.ghostapps.placapp.viewModel.BaseViewModel
 import java.util.*
@@ -25,7 +25,7 @@ class GameScoreViewModel(
     private var awayTeamSetScore = 0
     private var awayTeamScore = 0
 
-    private var scores = mutableListOf<Score>()
+    private var scores = mutableListOf<ScoreModel>()
 
     fun onCreate(homeTeamName: String, awayTeamName: String) {
         this.homeTeamName = homeTeamName
@@ -63,7 +63,7 @@ class GameScoreViewModel(
 
     private fun saveSet() {
         scores.add (
-            Score (
+            ScoreModel (
                 awayTeamScore = awayTeamScore,
                 homeTeamScore = homeTeamScore,
                 setIdentifier = awayTeamSetScore + homeTeamSetScore
@@ -125,7 +125,7 @@ class GameScoreViewModel(
                     homeTeamSetScore = homeTeamSetScore,
                     awayTeamName = awayTeamName,
                     awayTeamSetScore = awayTeamSetScore,
-                    scores = scores,
+                    scoreModels = scores,
                     date = Date().time
                 )
             )

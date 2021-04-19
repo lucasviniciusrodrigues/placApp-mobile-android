@@ -6,7 +6,7 @@ class RecordModel(
 
     val awayTeamName: String,
     val awayTeamSetScore: Int,
-    val scores: List<Score>,
+    val scoreModels: List<ScoreModel>,
 
     val date: Long
 )

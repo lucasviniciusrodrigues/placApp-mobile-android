@@ -2,10 +2,8 @@ package com.ghostapps.placapp.data.records.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import androidx.room.TypeConverters
-import com.ghostapps.placapp.data.records.local.converters.ScoreConverter
 import com.ghostapps.placapp.domain.models.RecordModel
-import com.ghostapps.placapp.domain.models.Score
+import com.ghostapps.placapp.domain.models.ScoreModel
 
 @Entity(tableName = RecordEntity.TABLE_NAME)
 class RecordEntity(
@@ -31,15 +29,15 @@ class RecordEntity(
                 homeTeamSetScore = recordModel.homeTeamSetScore,
                 awayTeamName = recordModel.awayTeamName,
                 awayTeamSetScore = recordModel.awayTeamSetScore,
-                scores = scoreToEntity(recordModel.scores),
+                scores = scoreToEntity(recordModel.scoreModels),
                 date = recordModel.date
             )
         }
 
-        private fun scoreToEntity(scores: List<Score>): MutableList <ScoreEntity> {
+        private fun scoreToEntity(scoreModels: List<ScoreModel>): MutableList <ScoreEntity> {
             val scoreEntity = mutableListOf<ScoreEntity>()
 
-            scores.forEach{
+            scoreModels.forEach{
                 scoreEntity.add(
                     ScoreEntity(
                         awayTeamScore = it.awayTeamScore,
@@ -59,17 +57,17 @@ class RecordEntity(
             homeTeamSetScore = homeTeamSetScore,
             awayTeamName = awayTeamName,
             awayTeamSetScore = awayTeamSetScore,
-            scores = toScoreModel(),
+            scoreModels = toScoreModel(),
             date = date
         )
     }
 
-    fun toScoreModel(): MutableList<Score> {
-        val scoreModels = mutableListOf<Score>()
+    fun toScoreModel(): MutableList<ScoreModel> {
+        val scoreModels = mutableListOf<ScoreModel>()
 
         scores.forEach{
             scoreModels.add(
-                Score(
+                ScoreModel(
                     awayTeamScore = it.awayTeamScore,
                     homeTeamScore = it.homeTeamScore,
                     setIdentifier = it.setIdentifier
