@@ -1,7 +1,7 @@
 package com.ghostapps.placapp.data.records.local.converters
 
 import androidx.room.TypeConverter
-import com.ghostapps.placapp.data.records.local.ScoreEntity
+import com.ghostapps.placapp.data.records.ScoreEntity
 import com.google.gson.Gson
 import java.util.*
 

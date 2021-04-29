@@ -1,3 +1,5 @@
+com/ghostapps/placapp/databinding/ActivityLoginBinding.java
+ com.ghostapps.placapp.databinding.ActivityLoginBinding
 com/ghostapps/placapp/databinding/ActivityGameRecordsBindingImpl.java
  com.ghostapps.placapp.databinding.ActivityGameRecordsBindingImpl
 com/ghostapps/placapp/databinding/ActivityScoreGameBindingImpl.java
@@ -8,21 +10,23 @@ com/ghostapps/placapp/databinding/ActivityScoreGameBindingImpl.java
  com.ghostapps.placapp.databinding.ActivityScoreGameBindingImpl$4
  com.ghostapps.placapp.databinding.ActivityScoreGameBindingImpl$5
  com.ghostapps.placapp.databinding.ActivityScoreGameBindingImpl$6
-com/ghostapps/placapp/BuildConfig.java
- com.ghostapps.placapp.BuildConfig
+com/ghostapps/placapp/databinding/ActivityHomeBinding.java
+ com.ghostapps.placapp.databinding.ActivityHomeBinding
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
 com/ghostapps/placapp/data/records/local/RecordDatabase_Impl.java
  com.ghostapps.placapp.data.records.local.RecordDatabase_Impl
  com.ghostapps.placapp.data.records.local.RecordDatabase_Impl$1
+com/ghostapps/placapp/databinding/ActivityLoginBindingImpl.java
+ com.ghostapps.placapp.databinding.ActivityLoginBindingImpl
+ com.ghostapps.placapp.databinding.ActivityLoginBindingImpl$1
+ com.ghostapps.placapp.databinding.ActivityLoginBindingImpl$2
 com/ghostapps/placapp/databinding/ActivityGameRecordsBinding.java
  com.ghostapps.placapp.databinding.ActivityGameRecordsBinding
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
-com/ghostapps/placapp/data/records/local/RecordDao_Impl.java
- com.ghostapps.placapp.data.records.local.RecordDao_Impl
- com.ghostapps.placapp.data.records.local.RecordDao_Impl$1
- com.ghostapps.placapp.data.records.local.RecordDao_Impl$2
+com/ghostapps/placapp/databinding/ActivityHomeBindingImpl.java
+ com.ghostapps.placapp.databinding.ActivityHomeBindingImpl
 com/ghostapps/placapp/generated/callback/OnClickListener.java
  com.ghostapps.placapp.generated.callback.OnClickListener
  com.ghostapps.placapp.generated.callback.OnClickListener$Listener
@@ -30,21 +34,23 @@ com/ghostapps/placapp/DataBindingTriggerClass.java
  com.ghostapps.placapp.DataBindingTriggerClass
 com/ghostapps/placapp/BR.java
  com.ghostapps.placapp.BR
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
+com/ghostapps/placapp/databinding/ActivityPreGameBindingImpl.java
+ com.ghostapps.placapp.databinding.ActivityPreGameBindingImpl
+ com.ghostapps.placapp.databinding.ActivityPreGameBindingImpl$1
+ com.ghostapps.placapp.databinding.ActivityPreGameBindingImpl$2
 com/ghostapps/placapp/databinding/ActivityScoreGameBinding.java
  com.ghostapps.placapp.databinding.ActivityScoreGameBinding
 com/ghostapps/placapp/DataBinderMapperImpl.java
  com.ghostapps.placapp.DataBinderMapperImpl
  com.ghostapps.placapp.DataBinderMapperImpl$InnerBrLookup
  com.ghostapps.placapp.DataBinderMapperImpl$InnerLayoutIdLookup
-com/ghostapps/placapp/databinding/ActivityPreGameBindingImpl.java
- com.ghostapps.placapp.databinding.ActivityPreGameBindingImpl
- com.ghostapps.placapp.databinding.ActivityPreGameBindingImpl$1
- com.ghostapps.placapp.databinding.ActivityPreGameBindingImpl$2
-com/ghostapps/placapp/databinding/ActivityHomeBinding.java
- com.ghostapps.placapp.databinding.ActivityHomeBinding
 com/ghostapps/placapp/databinding/ActivityPreGameBinding.java
  com.ghostapps.placapp.databinding.ActivityPreGameBinding
-com/ghostapps/placapp/databinding/ActivityHomeBindingImpl.java
- com.ghostapps.placapp.databinding.ActivityHomeBindingImpl
+com/ghostapps/placapp/data/records/local/RecordDao_Impl.java
+ com.ghostapps.placapp.data.records.local.RecordDao_Impl
+ com.ghostapps.placapp.data.records.local.RecordDao_Impl$1
+ com.ghostapps.placapp.data.records.local.RecordDao_Impl$2
+com/ghostapps/placapp/BuildConfig.java
+ com.ghostapps.placapp.BuildConfig
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent

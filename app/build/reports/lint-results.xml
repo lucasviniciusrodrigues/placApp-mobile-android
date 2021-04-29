@@ -13,7 +13,7 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="D:\workspace\fiap\mobile\placapp-38SCJ\app\build.gradle"
-            line="8"
+            line="9"
             column="5"/>
     </issue>
 
@@ -29,14 +29,14 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="D:\workspace\fiap\mobile\placapp-38SCJ\app\build.gradle"
-            line="34"
+            line="35"
             column="5"/>
     </issue>
 
     <issue
         id="GradleDependency"
         severity="Warning"
-        message="A newer version of androidx.room:room-runtime than 2.3.0-alpha02 is available: 2.3.0-rc01"
+        message="A newer version of androidx.room:room-runtime than 2.3.0-alpha02 is available: 2.4.0-alpha01"
         category="Correctness"
         priority="4"
         summary="Obsolete Gradle Dependency"
@@ -45,14 +45,14 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="D:\workspace\fiap\mobile\placapp-38SCJ\app\build.gradle"
-            line="45"
+            line="52"
             column="5"/>
     </issue>
 
     <issue
         id="GradleDependency"
         severity="Warning"
-        message="A newer version of androidx.room:room-compiler than 2.3.0-alpha02 is available: 2.3.0-rc01"
+        message="A newer version of androidx.room:room-compiler than 2.3.0-alpha02 is available: 2.4.0-alpha01"
         category="Correctness"
         priority="4"
         summary="Obsolete Gradle Dependency"
@@ -61,14 +61,14 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="D:\workspace\fiap\mobile\placapp-38SCJ\app\build.gradle"
-            line="46"
+            line="53"
             column="5"/>
     </issue>
 
     <issue
         id="GradleDependency"
         severity="Warning"
-        message="A newer version of junit:junit than 4.12 is available: 4.13.2"
+        message="A newer version of junit:junit than 4.12 is available: 4.13.1"
         category="Correctness"
         priority="4"
         summary="Obsolete Gradle Dependency"
@@ -77,7 +77,7 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="D:\workspace\fiap\mobile\placapp-38SCJ\app\build.gradle"
-            line="55"
+            line="65"
             column="5"/>
     </issue>
 
@@ -280,6 +280,54 @@
     <issue
         id="HardcodedText"
         severity="Warning"
+        message="Hardcoded string &quot;Email&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:hint=&quot;Email&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\res\layout\activity_login.xml"
+            line="36"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Password&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:hint=&quot;Password&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\res\layout\activity_login.xml"
+            line="59"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Entrar&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Entrar&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\res\layout\activity_login.xml"
+            line="74"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
         message="Hardcoded string &quot;x&quot;, should use `@string` resource"
         category="Internationalization"
         priority="5"
@@ -290,6 +338,22 @@
         <location
             file="D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\res\layout\item_game_record.xml"
             line="35"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;x&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;x&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\workspace\fiap\mobile\placapp-38SCJ\app\src\main\res\layout\item_game_score_record.xml"
+            line="24"
             column="9"/>
     </issue>
 

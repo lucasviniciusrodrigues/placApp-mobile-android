@@ -9,7 +9,7 @@ class GetAllLocalRegister(
 ) : GetAllRegister {
 
     override fun execute(): Array<RecordModel> {
-        return database.recordDao().getRecords().map { recordEntity -> recordEntity.toModel() }.toTypedArray()
+        return  database.recordDao().getRecords().map { recordEntity -> recordEntity.toModel() }.toTypedArray()
     }
 
 }

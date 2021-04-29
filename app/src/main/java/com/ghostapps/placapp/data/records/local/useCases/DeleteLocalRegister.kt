@@ -1,7 +1,7 @@
 package com.ghostapps.placapp.data.records.local.useCases
 
 import com.ghostapps.placapp.data.records.local.RecordDatabase
-import com.ghostapps.placapp.data.records.local.RecordEntity
+import com.ghostapps.placapp.data.records.RecordEntity
 import com.ghostapps.placapp.domain.models.RecordModel
 import com.ghostapps.placapp.domain.useCases.DeleteRegister
 

@@ -8,6 +8,8 @@ import androidx.room.RoomSQLiteQuery;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
+import com.ghostapps.placapp.data.records.RecordEntity;
+import com.ghostapps.placapp.data.records.ScoreEntity;
 import com.ghostapps.placapp.data.records.local.converters.ScoreConverter;
 import java.lang.Override;
 import java.lang.String;

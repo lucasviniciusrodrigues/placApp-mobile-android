@@ -88,7 +88,7 @@ public final class RecordDatabase_Impl extends RecordDatabase {
         final TableInfo _infoRecordsDatabase = new TableInfo("records_database", _columnsRecordsDatabase, _foreignKeysRecordsDatabase, _indicesRecordsDatabase);
         final TableInfo _existingRecordsDatabase = TableInfo.read(_db, "records_database");
         if (! _infoRecordsDatabase.equals(_existingRecordsDatabase)) {
-          return new RoomOpenHelper.ValidationResult(false, "records_database(com.ghostapps.placapp.data.records.local.RecordEntity).\n"
+          return new RoomOpenHelper.ValidationResult(false, "records_database(com.ghostapps.placapp.data.records.RecordEntity).\n"
                   + " Expected:\n" + _infoRecordsDatabase + "\n"
                   + " Found:\n" + _existingRecordsDatabase);
         }

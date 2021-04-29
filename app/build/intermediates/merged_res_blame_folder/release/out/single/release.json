@@ -12,16 +12,20 @@
         "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\layout_item_game_score_record.xml.flat",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\layout\\item_game_score_record.xml"
+    },
+    {
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -78,5 +82,9 @@
     {
         "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_login.xml.flat",
+        "source": "D:\\workspace\\fiap\\mobile\\placapp-38SCJ\\app\\src\\main\\res\\layout\\activity_login.xml"
     }
 ]

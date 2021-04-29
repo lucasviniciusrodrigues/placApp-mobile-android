@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.ghostapps.placapp.databinding.ActivityGameRecordsBindingImpl;
 import com.ghostapps.placapp.databinding.ActivityHomeBindingImpl;
+import com.ghostapps.placapp.databinding.ActivityLoginBindingImpl;
 import com.ghostapps.placapp.databinding.ActivityPreGameBindingImpl;
 import com.ghostapps.placapp.databinding.ActivityScoreGameBindingImpl;
 import java.lang.IllegalArgumentException;
@@ -25,15 +26,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYHOME = 2;
 
-  private static final int LAYOUT_ACTIVITYPREGAME = 3;
+  private static final int LAYOUT_ACTIVITYLOGIN = 3;
 
-  private static final int LAYOUT_ACTIVITYSCOREGAME = 4;
+  private static final int LAYOUT_ACTIVITYPREGAME = 4;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+  private static final int LAYOUT_ACTIVITYSCOREGAME = 5;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(5);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ghostapps.placapp.R.layout.activity_game_records, LAYOUT_ACTIVITYGAMERECORDS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ghostapps.placapp.R.layout.activity_home, LAYOUT_ACTIVITYHOME);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.ghostapps.placapp.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ghostapps.placapp.R.layout.activity_pre_game, LAYOUT_ACTIVITYPREGAME);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ghostapps.placapp.R.layout.activity_score_game, LAYOUT_ACTIVITYSCOREGAME);
   }
@@ -58,6 +62,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityHomeBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_home is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYLOGIN: {
+          if ("layout/activity_login_0".equals(tag)) {
+            return new ActivityLoginBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_login is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYPREGAME: {
           if ("layout/activity_pre_game_0".equals(tag)) {
@@ -125,11 +135,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(5);
 
     static {
       sKeys.put("layout/activity_game_records_0", com.ghostapps.placapp.R.layout.activity_game_records);
       sKeys.put("layout/activity_home_0", com.ghostapps.placapp.R.layout.activity_home);
+      sKeys.put("layout/activity_login_0", com.ghostapps.placapp.R.layout.activity_login);
       sKeys.put("layout/activity_pre_game_0", com.ghostapps.placapp.R.layout.activity_pre_game);
       sKeys.put("layout/activity_score_game_0", com.ghostapps.placapp.R.layout.activity_score_game);
     }

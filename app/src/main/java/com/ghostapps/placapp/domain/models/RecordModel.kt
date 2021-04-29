@@ -1,12 +1,14 @@
 package com.ghostapps.placapp.domain.models
 
-class RecordModel(
-    val homeTeamName: String,
-    val homeTeamSetScore: Int,
+data class RecordModel(
+    var homeTeamName: String,
+    var homeTeamSetScore: Int,
 
-    val awayTeamName: String,
-    val awayTeamSetScore: Int,
-    val scoreModels: List<ScoreModel>,
+    var awayTeamName: String,
+    var awayTeamSetScore: Int,
+    var scoreModels: List<ScoreModel>,
 
-    val date: Long
-)
+    var date: Long
+){
+    constructor() : this("",0,"", 0, listOf<ScoreModel>(), 0) {}
+}

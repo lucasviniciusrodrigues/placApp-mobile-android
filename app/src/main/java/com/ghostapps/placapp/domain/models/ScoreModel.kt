@@ -1,7 +1,9 @@
 package com.ghostapps.placapp.domain.models
 
-class ScoreModel (
-    val awayTeamScore: Int,
-    val homeTeamScore: Int,
-    val setIdentifier: Int
-)
+data class ScoreModel (
+    var awayTeamScore: Int,
+    var homeTeamScore: Int,
+    var setIdentifier: Int
+){
+    constructor(): this(0,0,0)
+}
