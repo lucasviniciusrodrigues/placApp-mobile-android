@@ -7,9 +7,7 @@ import com.google.firebase.ktx.Firebase
 import okhttp3.internal.wait
 
 class DeleteFirestoreRegister() : DeleteRegister {
-    override fun execute(recordModel: RecordModel) {
-
-        var threadDone = false;
+    override fun execute(successCallback: (recordModel: RecordModel) -> Unit, recordModel: RecordModel) {
 
         Firebase.firestore
             .collection("scores")
@@ -17,17 +15,12 @@ class DeleteFirestoreRegister() : DeleteRegister {
             .delete()
             .addOnSuccessListener {
                 println("Deleção com sucesso")
-                threadDone = true
+                successCallback(recordModel)
             }
             .addOnFailureListener {
                 println("Erro na deleção do item: " + it.message)
-                threadDone = true
                 // TODO add log
             }
-
-
-        while (!threadDone)
-            Thread.sleep(1000)
             
     }
 }

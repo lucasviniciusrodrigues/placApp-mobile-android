@@ -16,39 +16,45 @@ class GameRecordsViewModel(
 
     fun loadRecords() {
         Thread {
-            val recordsModel = getAllRegister.execute().flatMap { recordModel ->
-                val arrayList = arrayListOf<GameItem>()
+            getAllRegister.execute(
+                successCallback = {
+                    val recordsModel = it.flatMap { recordModel ->
+                    val arrayList = arrayListOf<GameItem>()
 
-                arrayList.add (
-                    GameItem.Record (
-                        homeTeamName = recordModel.homeTeamName,
-                        homeTeamSetScore = recordModel.homeTeamSetScore,
-                        awayTeamName = recordModel.awayTeamName,
-                        awayTeamSetScore = recordModel.awayTeamSetScore,
-                        date = recordModel.date
-                    )
-                )
-
-                arrayList.addAll (
-                    recordModel.scoreModels.map { score ->
-                        GameItem.Score (
-                            homeTeamScore = score.homeTeamScore,
-                            awayTeamScore = score.awayTeamScore,
-                            setIdentifier = score.setIdentifier
+                    arrayList.add (
+                        GameItem.Record (
+                            homeTeamName = recordModel.homeTeamName,
+                            homeTeamSetScore = recordModel.homeTeamSetScore,
+                            awayTeamName = recordModel.awayTeamName,
+                            awayTeamSetScore = recordModel.awayTeamSetScore,
+                            date = recordModel.date
                         )
-                    }
-                )
+                    )
 
-                arrayList
-            }
-            recordsList.postValue(recordsModel)
+                    arrayList.addAll (
+                        recordModel.scoreModels.map { score ->
+                            GameItem.Score (
+                                homeTeamScore = score.homeTeamScore,
+                                awayTeamScore = score.awayTeamScore,
+                                setIdentifier = score.setIdentifier
+                            )
+                        }
+                    )
+
+                    arrayList
+                }
+                    recordsList.postValue(recordsModel)
+                })
+
         }.start()
     }
 
     fun deleteRegister(recordModel: RecordModel) {
         Thread {
-            deleteRegister.execute(recordModel)
-            loadRecords()
+            deleteRegister.execute(
+                successCallback = { loadRecords() },
+                recordModel = recordModel
+            )
         }.start()
     }
 
