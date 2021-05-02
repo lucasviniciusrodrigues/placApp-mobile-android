@@ -9,7 +9,8 @@ class InsertFirestoreRegister(): InsertRegister {
     override fun execute(recordModel: RecordModel) {
         Firebase.firestore
             .collection("scores")
-            .add(recordModel)
+            .document(recordModel.date.toString())
+            .set(recordModel)
             .addOnFailureListener {
                 println("Erro na inserção")
                 // TODO add log
