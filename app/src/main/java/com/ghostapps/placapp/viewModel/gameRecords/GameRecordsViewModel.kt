@@ -1,11 +1,9 @@
 package com.ghostapps.placapp.viewModel.gameRecords
 
 import androidx.lifecycle.MutableLiveData
-import com.ghostapps.placapp.data.records.remote.useCases.GetAllFirestoreRegister
 import com.ghostapps.placapp.domain.models.RecordModel
 import com.ghostapps.placapp.domain.useCases.DeleteRegister
 import com.ghostapps.placapp.domain.useCases.GetAllRegister
-import com.ghostapps.placapp.ui.home.HomeActivity
 import com.ghostapps.placapp.viewModel.BaseViewModel
 import com.ghostapps.placapp.viewModel.gameRecords.domain.GameItem
 
@@ -21,8 +19,8 @@ class GameRecordsViewModel(
             val recordsModel = getAllRegister.execute().flatMap { recordModel ->
                 val arrayList = arrayListOf<GameItem>()
 
-                arrayList.add(
-                    GameItem.Record(
+                arrayList.add (
+                    GameItem.Record (
                         homeTeamName = recordModel.homeTeamName,
                         homeTeamSetScore = recordModel.homeTeamSetScore,
                         awayTeamName = recordModel.awayTeamName,
@@ -31,9 +29,9 @@ class GameRecordsViewModel(
                     )
                 )
 
-                arrayList.addAll(
+                arrayList.addAll (
                     recordModel.scoreModels.map { score ->
-                        GameItem.Score(
+                        GameItem.Score (
                             homeTeamScore = score.homeTeamScore,
                             awayTeamScore = score.awayTeamScore,
                             setIdentifier = score.setIdentifier
